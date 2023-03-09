@@ -1,4 +1,4 @@
-#include <iostream>
+#include<iostream>
 #include<vector>
 #include<map>
 
@@ -26,7 +26,7 @@ vector<int> twoSum(vector<int>& nums, int target)
 
 int main()
 {
-    vector<int> nums{2,7,11,15};
+    vector<int> nums = {2,7,11,15};
     // for (int i = 0; i < nums.size();i++){
     //     cout << nums[i] << endl;
     // }
