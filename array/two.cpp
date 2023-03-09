@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 vector<int> twoSum(vector<int>& nums, int target)
 {
     map<int, int> mymap;
@@ -27,9 +26,9 @@ vector<int> twoSum(vector<int>& nums, int target)
 int main()
 {
     vector<int> nums = {2,7,11,15};
-    // for (int i = 0; i < nums.size();i++){
-    //     cout << nums[i] << endl;
-    // }
+    for (int i = 0; i < nums.size();i++){
+        cout << nums[i] << endl;
+    }
     int a = 9;
     vector<int> ans;
     // cout << a;
