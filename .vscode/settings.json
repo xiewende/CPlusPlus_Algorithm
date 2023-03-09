@@ -26,6 +26,10 @@
         "-Wall"
     ],
 
+    // "C_Cpp.intelliSenseEngine":"Default",
+    "editor.suggest.snippetsPreventQuickSuggestions":true,
+
+
     "editor.minimap.enabled": true,
     // "C_Cpp.autocomplete": "Default",
     // "[cpp]": {
@@ -45,6 +49,8 @@
         "array": "cpp",
         "string_view": "cpp",
         "initializer_list": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "ostream": "cpp",
+        "algorithm": "cpp"
     } // 效果比cpptools要好
 }

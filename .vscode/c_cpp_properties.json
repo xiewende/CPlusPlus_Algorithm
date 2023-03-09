@@ -5,14 +5,14 @@
             "intelliSenseMode": "gcc-x64",
             "compilerPath": "D:/env/LLVM/bin/gcc.exe", //C:\LLVM\bin\gcc.exe
             "includePath": [
-                "${workspaceFolder}",
-                "D:\\env\\LLVM\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++" //可有无
+                "${workspaceFolder}"
+                //"D:\\env\\LLVM\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++" //可有无
             ],
             "defines": [],
             "browse": {
                 "path": [
-                    "${workspaceFolder}",
-                    "D:\\env\\LLVM\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++"
+                    "${workspaceFolder}"
+                    //"D:\\env\\LLVM\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
