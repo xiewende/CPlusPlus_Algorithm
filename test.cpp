@@ -1,4 +1,6 @@
-#include <iostream>
+#include<iostream>
+#include<string>
+
 using namespace std;
 
 int main()
@@ -10,7 +12,6 @@ int main()
     int b = 3;
     cout << b + a << endl;
 
-    // system("pause");
-    
+    //system("pause");
     return 0;
 }
