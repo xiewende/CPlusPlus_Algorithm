@@ -1,5 +1,9 @@
 // 1590. 使数组和能被 P 整除
 
+// 解题思路 ： 前缀和 + HashMap
+// HsahMap ==> key: Sum % P  value：下标 index  求最短子数组需要index
+
+// 取余的一个定理： 同余： 若（x-y） % p == 0，则 x 和 y 对 模 p 同余 
 
 #include<iostream>
 #include<vector>
