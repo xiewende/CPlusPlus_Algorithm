@@ -42,10 +42,10 @@ vector<string> findLongestSubarray(vector<string>& array) {
         return {};
     }
 
-    // return vector<string>(array.begin()+startIndex, array.begin()+startIndex+maxlength);  初始化截断子数组
-    vector<string> ans;
-    ans.assign(array.begin() + startIndex, array.begin() + startIndex + maxlength);
-    return ans;  // assign 截断子数组
+    return vector<string>(array.begin()+startIndex, array.begin()+startIndex+maxlength); // 初始化截断子数组
+    // vector<string> ans;
+    // ans.assign(array.begin() + startIndex, array.begin() + startIndex + maxlength);
+    // return ans;  // assign 截断子数组
 }
 
 int main(){
