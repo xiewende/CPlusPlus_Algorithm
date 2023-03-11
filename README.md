@@ -1,5 +1,7 @@
 # CPlusPlus_Algorithm
-a code repository implementing common algorithms in C++
+A code repository implementing common algorithms in C++.
+
+This is a repository that implements the algorithms in LeetCode. We divide the files according to the algorithm type, and the cpp file name is the serial-number of the corresponding LeetCode topic.
 
 ## environment of VScode to Run C++/C
 
