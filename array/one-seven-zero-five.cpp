@@ -5,6 +5,10 @@
 
 // 重新定义，数字为 -1，字母为 1，题目转化为 寻求最长的和为 0 的 子数组
 
+// 解题思路： 前缀和(sum) + HashMap
+// 由于求的是最长的子数组和为 0 
+// HsahMap ==> key: sum  value：下标 index   有index才可以求最长
+
 
 #include<iostream>
 #include<vector>
