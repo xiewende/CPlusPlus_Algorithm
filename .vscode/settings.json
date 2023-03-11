@@ -51,6 +51,7 @@
         "initializer_list": "cpp",
         "utility": "cpp",
         "ostream": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "unordered_map": "cpp"
     } // 效果比cpptools要好
 }
