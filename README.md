@@ -5,6 +5,11 @@ This is a repository that implements the algorithms in LeetCode. We divide the f
 
 ## environment of VScode to Run C++/C
 
+- The Best Attentioned 
+
+    [解题总结链接](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/problem-solving-template.md)  ,   [个人主页](https://sevenboy.online/)
+
+
 - 下载 C/C++ 环境
     - 下载 [LLVM Download](https://releases.llvm.org/download.html)，在此页面下载Clang。选 Pre-Built Binaries 中的 Windows (64-bit)，不需要下.sig文件
     - 下载 [MinGW-w64-for 32 and 64 bit Windows](https://sourceforge.net/projects/mingw-w64/files/)，在此页面下载 MinGW-w64，往下稍微翻一下，选最新版本中的x86_64-posix-seh。最好不要用 Download Latest Version，这个是在线安装包，有可能因为国内的“网络环境”下载失败。如果浏览器还是下载失败就换迅雷下，还失败，那就使用能访问Google的那种方法下。
