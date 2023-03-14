@@ -45,7 +45,7 @@
   }
   ```
 
-- Note：与动态规划解决的 [最大子数组](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/description/) 和 [乘积最大子数组](https://leetcode.cn/problems/maximum-product-subarray/description/) 不一样, 这两者并没有说是满足什么条件的情况下的子数组，而是最值，并且这两者并没有和**数组前缀和**产生关系，所以求解就不是 **前缀和+HashMap**，而是经典的**动态规划**问题；但是有类似 [连续数组](https://leetcode.cn/problems/contiguous-array/)，这是在基于满足条件K的情况下求最短或者最长的子数组，并且其和前缀和能够发生一定关系，所以这种题采取 **前缀和+HashMap**。
+- Note：与动态规划解决的 [最大子数组](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/description/) 和 [乘积最大子数组](https://leetcode.cn/problems/maximum-product-subarray/description/) 不一样, 这两者并没有说是满足什么条件的情况下的子数组，而是最值，并且这两者并没有和**数组前缀和**产生关系，所以求解就不是 **前缀和+HashMap**，而是经典的**动态规划**问题；但是有类似 [连续数组](https://leetcode.cn/problems/contiguous-array/)，这是在基于满足条件 K 的情况下求最短或者最长的子数组，并且其和前缀和能够发生一定关系，所以这种题采取 **前缀和+HashMap**。
 - 取余的一点点东西： 
-  - 若（x-y） % p == 0，则 x 和 y 对 模 p 同余 ；
+  - 若 (x-y) % p == 0，则 x 和 y 对 模 p 同余 ；
   - 若 (z-y) % p ==x 则 y % p  == （z-x） % p
