@@ -3,12 +3,11 @@ A code repository implementing common algorithms in C++.
 
 This is a repository that implements the algorithms in LeetCode. We divide the files according to the algorithm type, and the cpp file name is the serial-number of the corresponding LeetCode topic.
 
+## The Best Attentioned 
+
+[解题总结链接](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/problem-solving-template.md)  ,   [个人主页](https://sevenboy.online/)
+
 ## environment of VScode to Run C++/C
-
-- The Best Attentioned 
-
-    [解题总结链接](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/problem-solving-template.md)  ,   [个人主页](https://sevenboy.online/)
-
 
 - 下载 C/C++ 环境
     - 下载 [LLVM Download](https://releases.llvm.org/download.html)，在此页面下载Clang。选 Pre-Built Binaries 中的 Windows (64-bit)，不需要下.sig文件
