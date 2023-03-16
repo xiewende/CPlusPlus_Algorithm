@@ -12,12 +12,15 @@
   - 974.使数组和能被 K 整除 ==> [题目](https://leetcode.cn/problems/subarray-sums-divisible-by-k/), [解题](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/array/nine-seven-four.cpp)
   - 1590.使数组和能被 P 整除 ==> [题目](https://leetcode.cn/problems/make-sum-divisible-by-p/), [题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/array/one-five-nine-zero.cpp)
   - 面试题 17.05. 字母与数字 ==> [题目](https://leetcode.cn/problems/find-longest-subarray-lcci/), [题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/array/one-seven-zero-five.cpp)
+  - 1124. 表现良好的最长时间段 ==> [题目](https://leetcode.cn/problems/longest-well-performing-interval/), [题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/array/one-one-two-four.cpp)
+  - 2488. 统计中位数为 K 的子数组 ==> [题目](https://leetcode.cn/problems/count-subarrays-with-median-k/), [题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/array/two-four-eight-eight.cpp)
   
 - 数组前缀和：
   - 给定数组 nums[n], 得到前缀和数组sum[n]。 sum[idx]代表数组 nums 到下标 idx 的累和。
   - sum[i] - sum[j] (i>j) : 就是 nums[j]...nums[i]这个子数组的和，这个和常 **作为条件**
   - 例如：寻找和为 K 的子数组，也就是寻找 nums[j]...nums[i] 这个子数组和为 K，可以转变为寻找 sum[i] - sum[j] = K 是否存在
   - 考虑到是否存在的问题，选取 **HashMap** 就是优解。
+  - **需要善于将不一样的题目建模成数组为 1 0 -1 的代表，这样才可以合理利用前缀和的性质** （例如：1124，2488，面试题17.05）
   
 - 解题的模板：
 
