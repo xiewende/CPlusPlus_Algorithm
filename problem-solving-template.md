@@ -12,8 +12,8 @@
   - 974.使数组和能被 K 整除 ==> [题目](https://leetcode.cn/problems/subarray-sums-divisible-by-k/), [解题](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/array/nine-seven-four.cpp)
   - 1590.使数组和能被 P 整除 ==> [题目](https://leetcode.cn/problems/make-sum-divisible-by-p/), [题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/array/one-five-nine-zero.cpp)
   - 面试题 17.05. 字母与数字 ==> [题目](https://leetcode.cn/problems/find-longest-subarray-lcci/), [题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/array/one-seven-zero-five.cpp)
-  - 1124. 表现良好的最长时间段 ==> [题目](https://leetcode.cn/problems/longest-well-performing-interval/), [题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/array/one-one-two-four.cpp)
-  - 2488. 统计中位数为 K 的子数组 ==> [题目](https://leetcode.cn/problems/count-subarrays-with-median-k/), [题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/array/two-four-eight-eight.cpp)
+  - 1124.表现良好的最长时间段 ==> [题目](https://leetcode.cn/problems/longest-well-performing-interval/), [题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/array/one-one-two-four.cpp)
+  - 2488.统计中位数为 K 的子数组 ==> [题目](https://leetcode.cn/problems/count-subarrays-with-median-k/), [题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/array/two-four-eight-eight.cpp)
   
 - 数组前缀和：
   - 给定数组 nums[n], 得到前缀和数组sum[n]。 sum[idx]代表数组 nums 到下标 idx 的累和。
