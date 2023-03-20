@@ -16,6 +16,7 @@ vector<int> answerQueries(vector<int>& nums, vector<int>& queries) {
     }
     vector<int> answer(m);
     for (int i = 0; i < m; i++) {
+        // 二分查找
         answer[i] = upper_bound(f.begin(), f.end(), queries[i]) - f.begin() - 1;
     }
 
