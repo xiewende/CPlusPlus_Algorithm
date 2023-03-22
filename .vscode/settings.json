@@ -52,6 +52,7 @@
         "utility": "cpp",
         "ostream": "cpp",
         "algorithm": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "vector": "cpp"
     } // 效果比cpptools要好
 }
