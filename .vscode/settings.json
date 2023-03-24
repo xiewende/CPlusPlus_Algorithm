@@ -53,6 +53,7 @@
         "ostream": "cpp",
         "algorithm": "cpp",
         "unordered_map": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "new": "cpp"
     } // 效果比cpptools要好
 }
