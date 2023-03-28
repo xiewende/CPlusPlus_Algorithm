@@ -51,7 +51,7 @@ int countSubstrings(string s, string t) {
 }
 
 //动态规划
-int countSubstrings(string s, string t) {
+int countSubstrings1(string s, string t) {
     int len_s = s.length();
     int len_t = t.length();
     vector<vector<int>> dp_l(len_s+1, vector<int>(len_t+1, 0));
