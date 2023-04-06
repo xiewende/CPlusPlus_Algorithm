@@ -54,6 +54,7 @@
         "algorithm": "cpp",
         "unordered_map": "cpp",
         "vector": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "unordered_set": "cpp"
     } // 效果比cpptools要好
 }
