@@ -1,4 +1,4 @@
-// 剑指 Offer 56 - I. 数组中数字出现的次数
+// 剑指 Offer 56 - II. 数组中数字出现的次数
 
 #include<iostream>
 #include<unordered_set>
