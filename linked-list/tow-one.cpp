@@ -1,6 +1,6 @@
 #include<iostream>
 
-// 力扣低21道题目
+// 21. 合并两个有序链表
 
 using namespace std;
 
