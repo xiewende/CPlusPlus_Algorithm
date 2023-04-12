@@ -33,6 +33,7 @@ int longestDecomposition1(string text) {
         while(i<=n/2 && text.substr(0,i) != text.substr(n-i)){
             i++;
         }
+        // 单个字符串不可以切割的时候
         if(i > n/2){
             ans++;
             break;
@@ -45,7 +46,7 @@ int longestDecomposition1(string text) {
 
 
 int main(){
-    string text = "aaa";
+    string text = "abcd";
     int ans = longestDecomposition1(text);
     cout << ans;
     return 0;
