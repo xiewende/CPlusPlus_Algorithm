@@ -21,7 +21,7 @@ vector<string> sortPeople(vector<string>& names, vector<int>& heights) {
 
     for (int i = len - 1; i >= 0;i--)
     {
-        ans.push_back(stored[nums[i]]);
+        ans.push_back(stored[heights[i]]);
     }
     return ans;
 }
