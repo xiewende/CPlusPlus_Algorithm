@@ -3,6 +3,7 @@
 #include<string>
 #include<algorithm>
 
+
 using namespace std;
 
 // 自定义排序方式，也可以排序结构体，多个维度
@@ -28,6 +29,16 @@ int main()
         cout << nums[i] << " ";
     }
 
+    // int 转 string
+    string as = to_string(1);
+    // string 转 int
+    int i = atoi("234"); // stoi
+    cout << i;
+
+    string s = "2345";
+    int c = 1;
+    s[0] = c + '0';
+    cout << s;
     //system("pause");
     return 0;
 }
