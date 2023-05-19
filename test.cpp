@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// 自定义排序方式，也可以排序结构体，多个维度
+// 自定义排序方式，也可以排序结构体，多个维度，是什么结构体 cmp 就传什么参数 bool cmp(node a, node b)
 // 在定义为 类成员函数 的时候一定需要 static 修饰；
 bool cmp(int a, int b){
     // return a>b; // 降序
