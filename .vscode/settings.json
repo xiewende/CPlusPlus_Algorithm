@@ -56,6 +56,7 @@
         "vector": "cpp",
         "new": "cpp",
         "unordered_set": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "set": "cpp"
     } // 效果比cpptools要好
 }
