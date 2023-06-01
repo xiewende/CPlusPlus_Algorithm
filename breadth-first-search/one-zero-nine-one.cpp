@@ -1,5 +1,7 @@
 // 1091. 二进制矩阵中的最短路径
 
+// 解题思路：广度优先遍历
+
 #include<iostream>
 #include<vector>
 #include<unordered_map>
