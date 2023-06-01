@@ -3,7 +3,7 @@
 
 ### 子数组问题 
 
-- 解题思路：**数组前缀和 + HashMap**
+#### 解题思路1：**数组前缀和 + HashMap**
 
 - 题目和题解：
   - 523.连续的子数组和 ==> [题目](https://leetcode.cn/problems/continuous-subarray-sum/), [题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/array/five-two-three.cpp)
@@ -52,3 +52,19 @@
 - 取余的一点点东西： 
   - 若 (x-y) % p == 0，则 x 和 y 对 模 p 同余 ；
   - 若 (z-y) % p ==x 则 y % p  == （z-x） % p
+
+
+
+#### 解题思路2：滑动窗口
+
+- 题目和题解：
+  - 209.长度最小的子数组 ==> [题目](https://leetcode.cn/problems/minimum-size-subarray-sum/), [题解]()
+  - 713.乘积小于K的子数组 ==> [题目](https://leetcode-cn.com/problems/subarray-product-less-than-k/), [题解]()
+  - 2261.含最多K个可整除元素的子数组 ==> [题目](https://leetcode.cn/problems/k-divisible-elements-subarrays/), [题解]()
+
+#### 解题思路3：动态规划
+
+- 题目和题解
+  - 53.最大子数组和 ==> [题目](https://leetcode-cn.com/problems/maximum-subarray/), [题解]()
+  - 152.乘积最大子数组 ==> [题目](https://leetcode-cn.com/problems/maximum-product-subarray/), [题解]()
+  - 718.最长重复子数组 ==> [题目](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/), [题解]()
