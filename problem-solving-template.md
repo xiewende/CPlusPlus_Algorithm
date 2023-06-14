@@ -68,3 +68,7 @@
   - 53.最大子数组和 ==> [题目](https://leetcode-cn.com/problems/maximum-subarray/), [题解]()
   - 152.乘积最大子数组 ==> [题目](https://leetcode-cn.com/problems/maximum-product-subarray/), [题解]()
   - 718.最长重复子数组 ==> [题目](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/), [题解]()
+
+
+## 单调栈问题
+  单调栈一般指的是 栈底大栈顶小的顺序，专门解决 Next Greater Number 问题，一但要求下一个更大的元素，单调栈
