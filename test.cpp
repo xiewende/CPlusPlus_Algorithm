@@ -3,6 +3,8 @@
 #include<string>
 #include<algorithm>
 
+#include<numeric> // accumulate求和
+
 
 using namespace std;
 
@@ -28,7 +30,7 @@ int main()
     {
         cout << nums[i] << " ";
     }
-    // int sum = accumulate(nums.begin(), nums.end(), 0); 库函数求和
+    // int sum = accumulate(nums.begin(), nums.end(), 0); // 库函数求和
 
     // int 转 string
     string as = to_string(1);
