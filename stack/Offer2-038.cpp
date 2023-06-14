@@ -1,5 +1,7 @@
 // 剑指 Offer II 038. 每日温度
 
+// 单调栈
+
 #include<iostream>
 #include<stack>
 #include<vector>
