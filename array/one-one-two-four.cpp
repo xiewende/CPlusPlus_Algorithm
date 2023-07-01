@@ -1,5 +1,7 @@
 // 1124. 表现良好的最长时间段
 
+// 构建模型，哈希表+前缀和
+
 // 给定 hours[n]数组， 定义 hour 大于 8 的为 1，小于 8 的为 -1 ，
 // 定义 sum[i] 为 hours[i] 的前缀数组和
 // sum[right] - sum[left] > 0 代表在 hours[left]..hours[right] 满足表现良好时间段，==》 sum[right] - sum[left] > 0
