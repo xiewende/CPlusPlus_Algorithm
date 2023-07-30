@@ -32,6 +32,10 @@ int main()
     }
     // int sum = accumulate(nums.begin(), nums.end(), 0); // 库函数求和
 
+    // 求数组最大值最小值 algorithm
+    int max = *max_element(nums.begin(), nums.end());
+    int min = *min_element(nums.begin(), nums.end());
+
     // int 转 string
     string as = to_string(1);
     // string 转 int
