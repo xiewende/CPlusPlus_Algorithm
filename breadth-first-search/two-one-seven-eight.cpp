@@ -1,5 +1,7 @@
 // 2178. 拆分成最多数目的正偶数之和
 
+// dfs
+
 #include<iostream>
 #include<vector>
 
