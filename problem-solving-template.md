@@ -54,7 +54,6 @@
   - 若 (z-y) % p ==x 则 y % p  == （z-x） % p
 
 
-
 #### 解题思路2：滑动窗口
 
 - 题目和题解：
@@ -72,3 +71,29 @@
 
 ## 单调栈问题
   单调栈一般指的是 栈底大栈顶小的顺序，专门解决 Next Greater Number 问题，一但要求下一个更大的元素，单调栈
+  - 496. 下一个更大的元素1==>[题目](https://leetcode.cn/problems/next-greater-element-i/description/), [题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/stack/four-nine-six.cpp)
+  - 503. 下一个更大的元素2==>[题目](https://leetcode.cn/problems/next-greater-element-ii/), [题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/stack/five-zero-three.cpp)
+  - 2454. 下一个更大的元素3==>[题目](https://leetcode.cn/problems/next-greater-element-iv/), [题解]()
+  - 739. 每日温度==>[题目](https://leetcode.cn/problems/daily-temperatures/), [题解]()
+  - 456. 132模式==>[题目](https://leetcode.cn/problems/132-pattern/), [题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/stack/four-five-six.cpp)
+  - 901. 股票价格跨度==>[题目](https://leetcode.cn/problems/online-stock-span/), [题解]()
+
+  - 解题模板：
+    ```
+    int function(vector<int> nums){ //数组 nums 也可以多个nums数组
+      //1、创建单调栈，**一般栈底大，栈顶小**
+      stack<int> order_stack;
+      // 进入循环
+      for(int i=0; i< nums.size(); i++){
+        int target = nums[i] // 当前值
+        // 在栈不为空的时候，判断当前元素和栈顶元素的大小关系，满足的话就退出栈顶元素
+        while(!order_stack.empty() && curr > order_stack.top()){
+          order_stack.pop();
+        }
+        //判断栈是否为空来保存此步骤的答案
+        ans[i] =.....(order_stack.top(), 栈顶元素居多，或者为不满足的情况-1)
+        // 当前元素入栈
+      }
+      return ans；
+    }
+  ```
