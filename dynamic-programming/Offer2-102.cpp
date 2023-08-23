@@ -18,8 +18,8 @@
 //         dp[0][j] = 0;
 // 当 1 < i < n;
 // 遍历 0 <= j <= negSum
-//                    若 j<nums[i] : 则不能选nums[i], 此时 dp[i][j] = dp[i - 1][j] 若 j>
-//                        nums[i] : 可以不选nums[i], dp[i][j] = dp[i - 1][j];
+//                    若 j<nums[i] : 则不能选nums[i], 此时 dp[i][j] = dp[i - 1][j] 
+//                    若 j> nums[i] : 可以不选nums[i], dp[i][j] = dp[i - 1][j];
 //                                  可以选择nums[i], dp[i][j] = dp[i-1][j-nums[i]]
 //                                  所以 dp[i][j] = dp[i - 1][j] + dp[i-1][j-nums[i]]
 
