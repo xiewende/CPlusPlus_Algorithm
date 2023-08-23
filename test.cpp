@@ -2,7 +2,7 @@
 #include<vector>
 #include<string>
 #include<algorithm>
-
+#include<utility> // pair
 #include<numeric> // accumulate求和
 
 
@@ -20,7 +20,7 @@ int main()
     int a = 12;
     cout << a << endl;
     cout << "Hello, world!" << endl;
-
+    // int c = INT_MIN
     int b = 3;
     cout << b + a << endl;
 
@@ -30,7 +30,8 @@ int main()
     {
         cout << nums[i] << " ";
     }
-    // int sum = accumulate(nums.begin(), nums.end(), 0); // 库函数求和
+
+    int sum = accumulate(nums.begin(), nums.end(), 0); // 库函数求和
 
     // 求数组最大值最小值 algorithm
     int max = *max_element(nums.begin(), nums.end());
@@ -39,8 +40,10 @@ int main()
     // int 转 string
     string as = to_string(1);
     // string 转 int
-    int i = atoi("234"); // stoi
-    cout << i;
+    string s = "12";
+    int s1 = atoi(s.c_str()); // 更稳妥
+    int s2 = stoi(s); // 可能会报错
+    cout << s1<< s2;
 
     string s = "2345";
     int c = 1;
