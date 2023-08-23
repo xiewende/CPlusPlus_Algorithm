@@ -16,7 +16,7 @@
 //     dp[i]：以元素nums[i] 结尾的最大子数组和
 
 // 转移方程：
-//     dp[i] = man(dp[i - 1] + nums[i], nums[i]);
+//     dp[i] = max(dp[i - 1] + nums[i], nums[i]);
 
 // 记住：求数组的最大子数组和需要遍历 dp[i] 取最大！
 
