@@ -77,7 +77,6 @@
   - 739. 每日温度==>[题目](https://leetcode.cn/problems/daily-temperatures/), [题解]()
   - 456. 132模式==>[题目](https://leetcode.cn/problems/132-pattern/), [题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/stack/four-five-six.cpp)
   - 901. 股票价格跨度==>[题目](https://leetcode.cn/problems/online-stock-span/), [题解]()
-
   - 解题模板：
     ```
     int function(vector<int> nums){ //数组 nums 也可以多个nums数组
@@ -96,4 +95,14 @@
       }
       return ans；
     }
-  ```
+    ```
+
+## 前缀和+差分数组
+
+
+
+
+
+
+
+
