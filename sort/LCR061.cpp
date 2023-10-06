@@ -1,4 +1,4 @@
-// 查找和最小的 K 对数字
+// LCR 061.查找和最小的 K 对数字
 
 #include<iostream>
 #include<vector>
