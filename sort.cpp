@@ -20,7 +20,7 @@ int patition(vector<int>& nums, int left, int right){
         // 找到换位置
         nums[left] = nums[right];
         // 左开始找比中枢大
-        while (left<right && nums[left]<pivot)
+        while (left<right && nums[left]<=pivot)
         {
             left++;
         }
@@ -48,7 +48,7 @@ void quickSort(vector<int>& nums, int left, int right){
 
 int main(int argc, char const *argv[])
 {
-    vector<int> nums = {2,4,3,1,6,8,4};
+    vector<int> nums = {2,4,4,3,3,1,6,8,4};
     quickSort(nums, 0, nums.size()-1);
     for(auto curr: nums){
         cout << curr << " ";
