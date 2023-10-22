@@ -1,5 +1,15 @@
-
 ## 总结做题的技巧
+
+
+
+- 如果确切知道答案的范围的，可以列举出答案的左边界和右边界，再利用二分来找某个值是否就是答案，二分的策略。
+- map，set是有序的，边添加，便查找是有效的，是可以采用二分查找的。map中查找的是key。
+- 一维DP，二维DP，状态DP，区间DP，树形DP。
+
+- DFS：栈；BFS：队列
+- 常规队列，**优先队列（多个值会变动但是有优先次序的首选）**
+
+
 
 ### 1、子数组问题 
 
@@ -201,3 +211,59 @@
   - 1094.拼车==>[题目](https://leetcode.cn/problems/car-pooling/description/)，[题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/difference-array/one-zero-nine-four.cpp)
   - 1109.航班预订统计==>[题目](https://leetcode.cn/problems/corporate-flight-bookings/)，[题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/difference-array/one-one-zero-nine.cpp)
   - 2046.将区间分为最少组数==>[题目](https://leetcode.cn/problems/divide-intervals-into-minimum-number-of-groups/)，[题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/difference-array/two-four-zero-six.cpp)
+
+
+
+### 4、字符串哈希
+
+我们判断字符串的时候，可以利用哈希的方式来存储，
+
+例子：字符串 aabbbaabcc，判断长度为3的字串是都有重复，此时可以简单的把每次长度的为3的字串遍历出来，判断是都重复，这就可以利用哈希表 unordered_map，map["aab"] = 1, 后面遍历的时候还可以看到第二个 aab。此时哈希表中存在 aab，所以可以判断是存在长度为3的字串是重复的。
+
+但是有一个问题，这里我们是将整个字串放入到哈希表作为key的，但是当字串很长时，生成字串和哈希表本省常数操作，此时计算量会很大。
+
+- **字符串哈希：就是将字符串映射成一个p进制的数字，**也就是说存放到哈希表中的key不是字串了，而是字串对应的哈希值。
+
+- **Hash函数 ： $h(s) = \sum_{i=1}^n s[i] \times p^{n-i}$**
+
+- **前缀和：h[i] = h[i-1] x p + s[i], h[0]=0**；求一个字符串的哈希值就相当于求前缀和
+
+- **区间和：h[l, r] = h[r] - h[l-1] * p^{r-l+1}**；求一个字符串的字串就相当于求区间和
+
+- **p通常可以选择：26，131，13131，131313，这样子出来的哈希值是很大**，可以用 (long long) 或者 (unsigned ong long) 或者 取模的操作，但是取模就可能产生哈希冲突。取模一般取最大整数。时间复杂度就是 O(n)。
+
+例子，ABCDE的 哈希值，以及字串值
+
+前缀和：**h[i] = h[i-1] x p + s[i], h[0]=0**
+
+- A：$A$，$h[1] = 65$
+- AB:  $A  \times p^1 + B$， $h[2] = h[1] \times p + 66$
+- ABC：$A \times p^2 + B \times p^1 + C$，$h[3] = h[2] \times p + 67$
+- ABCD：$A \times p^3 + B \times p^2 + C \times p^1 + D$，$h[4] = h[3] \times p + D$
+- ABCDE：$A \times p^4 + B \times p^3 + C \times p^2 + D \times P^1 + E$，$h[5] = h[4] \times p + E$
+
+区间和：**h[l, r] = h[r] - h[l-1] * p^{r-l+1}**
+
+- $DE = ABCDE - ABC \times p^2 = D \times P^1 + E$，就是：$h[4, 5] = h[5]-h[3] \times p^{5-4+1}$
+
+**常用代码：**
+
+```
+// 1、先构建整个字符串的哈希值
+string s = "asbdbdbd";
+vector<unsigned long long> h(n + 1);
+vector<unsigned long long> p(n + 1);
+PP[0] = 1;
+for (int i = 0; i < n; i++){
+    PP[i + 1] = PP[i] * P; // 记录 P 的i次幂的值； P = 131, 13131, 131313
+    h[i + 1] = h[i] * P + s[i]; // 直接公式累加
+}
+
+//2、可以根据具体要求求得某个子串的哈希值
+s[i,j]的哈希值：h[j] - h[i] * PP[j-i+1]
+```
+
+- 187. 重复的DNA序列 ==> [题目](https://leetcode.cn/problems/repeated-dna-sequences/)，[题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/difference-array/one-zero-nine-four.cpp)
+
+- 1044.最长重复字串 ==>  [题目](https://leetcode.cn/problems/longest-duplicate-substring/description/)，[题解](https://github.com/xiewende/CPlusPlus_Algorithm/blob/main/difference-array/one-zero-nine-four.cpp)
+
