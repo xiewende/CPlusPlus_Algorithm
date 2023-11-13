@@ -46,7 +46,7 @@ int trap(vector<int>& height) {
     return ans;
 }
 
-// 单调栈，单调递减栈
+// 单调栈，单调递减栈,大到小
 // 水平方向看是否可以有雨水来接
 int trap1(vector<int>& height) {
     int n = height.size();
