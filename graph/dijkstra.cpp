@@ -37,7 +37,7 @@ vector<int> djstl(vector<vector<pair<int ,int>>>& graph){
     vector<int> dis(n + 1, INT_MAX);
     dis[1] = 0;
     // 广度遍历  
-    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q; // 优先队列，按照距离来判断
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q; // 优先队列，按照距离来判断，first：距离；second：节点
     q.push({0, 1}); // 起点的距离先设置为0
     
     while(!q.empty()){
