@@ -95,7 +95,7 @@ int main()
     int a = 9;
     cout << sizeof(a); // 4，字节数
 
-        // 交换值
+    // 交换值
     int a = 3;
     int b = 5;
     // 利用+
